@@ -1,0 +1,71 @@
+<section class="bg-light  ms-auto bg-main mt-3 bg-black text-white">
+    <h1 class="text-center">CONATCT SECTION</h1>
+   
+       
+            <form action=""    (ngSubmit)="x();"   [formGroup]="contactSection"  class="py-3">
+                <div>
+                    <label for="userName">userName</label>
+                    <input type="text"  placeholder="userName"   class="form-control"  formControlName="userName">
+                </div>
+        
+        
+                <div   class="bg-danger" *ngIf="contactSection.get('userName')?.errors && contactSection.get('userName')?.touched">
+                    <p *ngIf="contactSection.get('userName')?.getError('required')">enter your regiurd</p>
+                    <p  *ngIf="contactSection.get('userName')?.getError('minlength')">enter your minLength 6</p>
+                    <p   *ngIf="contactSection.get('userName')?.getError('maxlength')">enter your maxLength 10</p>
+                </div>
+        
+        
+        
+        
+                <div>
+                    <label for="userAge">userAge</label>
+                    <input type="text"  placeholder="userAge"   class="form-control"  formControlName="userAge">
+                </div>
+        
+        
+                
+                <div   class="bg-danger" *ngIf="contactSection.get('userAge')?.errors && contactSection.get('userAge')?.touched">
+                    <p *ngIf="contactSection.get('userAge')?.getError('required')">enter your regiurd</p>
+                    <p  *ngIf="contactSection.get('userAge')?.getError('minlength')">enter your minLength 2</p>
+                    <p   *ngIf="contactSection.get('userAge')?.getError('maxlength')">enter your maxLength 3</p>
+                </div>
+        
+        
+        
+                <div>
+                    <label for="email">email</label>
+                    <input type="email"  placeholder="email"   class="form-control"  formControlName="email">
+                </div>
+        
+        
+        
+         
+                <div   class="bg-danger" *ngIf="contactSection.get('email')?.errors && contactSection.get('email')?.touched">
+                    <p *ngIf="contactSection.get('email')?.getError('required')">enter your regiurd</p>
+                   
+                </div>
+        
+        
+        
+        
+        
+                <div>
+                    <label for="password">password</label>
+                    <input type="password"  placeholder="password"  class="form-control"  formControlName="password">
+                </div>
+        
+        
+                  
+                <div   class="bg-danger" *ngIf="contactSection.get('password')?.errors && contactSection.get('password')?.touched">
+                    <p *ngIf="contactSection.get('password')?.getError('required')">enter your regiurd</p>
+                    <p  *ngIf="contactSection.get('password')?.getError('minlength')">enter your minLength 6</p>
+                    <p   *ngIf="contactSection.get('password')?.getError('maxlength')">enter your maxLength 10</p>
+                </div>
+        
+                <button   class="bg-success btn-lg  p-3 mt-3">Send Massage</button>
+            </form>
+        
+
+  
+</section>

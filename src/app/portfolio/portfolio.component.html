@@ -1,0 +1,25 @@
+<section class="mt-5">
+    <div class="container">
+       <div class="row g-5">
+        <h1  class="fs-1  text-center">PORTFOLIO COMPONENT</h1>
+        <div class="col-md-4"*ngFor="let img of images">
+            <div>
+                
+                <img [src]="img.imgSrc" class="w-100 border" [alt]="img.altImg"   (click)="hideElement_1($event);  hideElement()">
+            </div>
+        </div>
+       </div>
+    </div>
+</section>
+
+
+
+
+
+<section>
+    <div class="light-contanier  d-none" id="ss"   (click)="hideElement_2();">
+        <div class="light-box" id="ww">
+
+        </div>
+    </div>
+</section>

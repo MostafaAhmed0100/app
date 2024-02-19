@@ -1,0 +1,30 @@
+
+.light-contanier{
+    display: flex;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+
+    width: 100%;
+    background-color:rgba(0, 0, 0, 50%);
+    justify-content: center;
+
+    align-items: center;
+
+
+
+}
+
+
+.light-contanier .light-box{
+position: relative;
+  width: 50%;
+  height: 50%;
+
+  background-image:url('../../assets/image/port1.png');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+
+}

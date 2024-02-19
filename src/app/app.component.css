@@ -1,0 +1,12 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--bs-body-font-family);
+}
+
+
+.navbar-brand{
+    font-family: var(--bs-body-font-family);   
+}
+
+.nav-link{
+    font-family: var(--bs-body-font-family);
+}
